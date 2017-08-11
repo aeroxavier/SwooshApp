@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kylejimer.lapiz.com.swooshapp.Main3Activity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        >
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/beginner_baller_bg"
+            />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/swoosh_logo"
+
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:id="@+id/iama"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/i_am_a"
+            android:layout_below="@id/logo"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="190dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/beginner"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:background="@drawable/button_enabled"
+            android:id="@+id/beg"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="Clicked"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/baller"
+            android:textSize="20dp"
+            android:id="@+id/ball"
+            android:textAlignment="center"
+            android:background="@drawable/button_enabled"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="Clicked"
+            android:layout_weight="1"
+            android:textAllCaps="false" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:text="Finish"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:background="@drawable/button_enabled"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="Final"
+            android:enabled="false"
+            />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

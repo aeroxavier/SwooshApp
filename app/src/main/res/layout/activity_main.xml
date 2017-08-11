@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kylejimer.lapiz.com.swooshapp.MainActivity">
+<RelativeLayout
+android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    >
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+     android:src="@drawable/welcome_screen_bg"
+    />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+
+        />
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="55dp"
+        android:id="@+id/allin"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/go_all_in"
+    android:layout_below="@id/logo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/allout"
+        android:layout_below="@id/allin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="28dp"
+        android:text="@string/all_out"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/find"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:layout_below="@+id/allout"
+        android:text="@string/find"
+        />
+
+<Button
+    android:id="@+id/startbutton"
+    android:layout_width="350dp"
+    android:layout_height="55dp"
+android:text="@string/get_started"
+    android:textSize="20dp"
+    android:textAlignment="center"
+    android:background="@drawable/button_enabled"
+    android:textColor="@android:color/white"
+    android:layout_marginBottom="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:onClick="GetStarted"
+    />
+
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kylejimer.lapiz.com.swooshapp.Main4Activity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        >
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/desired_league_bg"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+
+        />
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:id="@+id/desl"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/desired_league"
+        android:layout_below="@id/logo"
+        />
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:text="@string/mens_"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:background="@drawable/button_enabled"
+        android:id="@+id/menss"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/desl"
+        android:textAllCaps="false"
+        android:onClick="OnClick"
+        android:enabled="false"/>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:text="@string/womens_"
+        android:textSize="20dp"
+        android:id="@+id/womenss"
+        android:textAlignment="center"
+        android:background="@drawable/button_enabled"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/menss"
+        android:onClick="OnClick"
+        android:enabled="false"
+        android:textAllCaps="false" />
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:text="@string/co_ed_"
+        android:textSize="20dp"
+        android:id="@+id/coedd"
+        android:textAlignment="center"
+        android:background="@drawable/button_enabled"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/womenss"
+        android:onClick="OnClick"
+        android:textAllCaps="false"
+        android:enabled="false"/>
+    <TextView
+        android:id="@+id/final1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="@string/i_am_a"
+        android:layout_below="@+id/coedd"/>
+    <TextView
+        android:id="@+id/final2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/final1"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
